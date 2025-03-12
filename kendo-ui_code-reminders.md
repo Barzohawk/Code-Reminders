@@ -1,7 +1,10 @@
-# Expanding Kendo UI K-Window when using custom collapse-right
+# Kendo UI Code Reminders
+## Expanding Kendo UI K-Window when using custom collapse-right
+
 I was running into issues with Kendo UI where the frame for the form was creating a scroll when a collapse was opened to the right for additional fields when a button was clicked. this following code solved the problem. Keep in mind, you may not need the .k-edit-form-container like I did. Use as you need. Enjoy!
 
-# The following content would be what is placed within the k-window
+### k-window Changes
+
 ```html
 <div class="k-edit-form-container">
   <div class="custom-edit-box">
@@ -18,7 +21,8 @@ I was running into issues with Kendo UI where the frame for the form was creatin
 </div>
 ```
 
-And then the CSS
+### CSS
+
 ```css
 .custom-edit-box {
   padding: 20px;
@@ -34,7 +38,8 @@ And then the CSS
 }
 ```
 
-And finally, the JQuery
+### JQuery
+
 ```jquery
 function adjustWindowWidth() {
   var windowWidth = $(window).width();
